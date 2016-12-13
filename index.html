@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br" ng-app="app">
+<head>
+   <meta charset="UTF-8">
+   <title>Angular Route</title>
+</head>
+<body>
+   
+   <ul>
+      <li><a href="#/">Home</a></li>
+      <li><a href="#/sobre">Sobre</a></li>
+      <li><a href="#/contato">Contato</a></li>
+   </ul>
+   
+   <article ng-view=""></article>
+   
+   <script src="js/vendor/angular.min.js"></script>
+   <script src="js/vendor/angular-route.min.js"></script>
+   
+   <script src="js/app/app.module.js"></script>
+   <script src="js/app/app.config.js"></script>   
+   
+   <script src="js/controllers/homeController.js"></script>
+   <script src="js/controllers/sobreController.js"></script>
+   <script src="js/controllers/contatoController.js"></script>
+   <script src="js/controllers/pageNotFoundController.js"></script>
+   
+</body>
+</html>
